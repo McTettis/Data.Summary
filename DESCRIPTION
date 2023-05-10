@@ -3,3 +3,4 @@ Type: Package
 Title: Dona una taula resum d'una variable numerica
 Version: 1.0
 RoxygenNote: 7.2.3
+Imports: plyr
