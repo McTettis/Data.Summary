@@ -10,3 +10,4 @@ valor maximo
 Debe ser instalado des de R:
 library(devtools)
 install_github("McTettis/Data.Summary")
+requiere el package (plyr)
