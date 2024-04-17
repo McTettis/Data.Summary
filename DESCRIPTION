@@ -1,6 +1,10 @@
-Package: DataSummary
+Package: Data.Summary
 Type: Package
-Title: Dona una taula resum d'una variable numerica
-Version: 1.0
-RoxygenNote: 7.2.3
-Imports: plyr
+Title: Retorna una taula resum
+Version: 1.1
+Author: Omedes, S.
+Maintainer: Omedes, S. <omedes@icm.csic.es>
+Description: data.summary genera una taula resum per poder visualitzar rapidament les dades. export.summary genera un arxiu .csv que facilita la creacio de taules per a publicacions cientifiques
+Encoding: UTF-8
+LazyData: true
+Depends: dplyr
