@@ -8,4 +8,3 @@ Description: data.summary genera una taula resum per poder visualitzar rapidamen
 Encoding: UTF-8
 LazyData: true
 Depends: plyr
-Depends: dplyr
