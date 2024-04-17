@@ -2,3 +2,4 @@
 
 import(plyr)
 export(data.summary)
+export(export.summary)
