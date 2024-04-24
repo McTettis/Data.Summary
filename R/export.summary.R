@@ -27,5 +27,5 @@ export.summary <- function(data, varname, groupnames = NULL, ruta){
   data_export <- ddply(data, groupnames, .fun=export_func,
                        varname)
 
-  write.csv(data_export, file = NULL, row.names = FALSE, fileEncoding = "latin1")
+  write.csv(data_export, file = ruta, row.names = FALSE, fileEncoding = "latin1")
 }
