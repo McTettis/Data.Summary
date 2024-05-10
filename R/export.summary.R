@@ -13,7 +13,7 @@ export.summary <- function(data, varname, groupnames = NULL, ruta){
   require(plyr)
 
   export_func <- function(x, col){
-    c(n = length(x[[col]]),
+    c(n = sum(!is.na(x[[col]]) & is.numeric(x[[col]])),
       mean.SE = paste(round(mean(x[[col]], na.rm=TRUE), 2),
                       "±",
                       round(sd(x[[col]], na.rm=TRUE) / sqrt(length(x[[col]])), 2)),
