@@ -12,8 +12,8 @@
 data.summary <- function(data, varname, groupnames = NULL){
   require(plyr)
   summary_func <- function(x, col){
-    c(n = length(x[[col]]),
-      mean = mean(x[[col]], na.rm=TRUE),
+    c(n = sum(!is.na(x[[col]]) & is.numeric(x[[col]])),
+      mean = mean(x[[col]], na.rm = TRUE),
       SD = sd(x[[col]], na.rm=TRUE),
       SE = sd(x[[col]], na.rm=TRUE) / sqrt(length(x[[col]])),
       Min = min(x[[col]], na.rm = TRUE),
