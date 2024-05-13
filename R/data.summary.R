@@ -19,7 +19,8 @@ data.summary <- function(data, varname, groupnames = NULL){
       Min = min(x[[col]], na.rm = TRUE),
       Max = max(x[[col]], na.rm = TRUE))
   }
-  data_sum<-ddply(data, groupnames, .fun=summary_func,
+  data_sum <- ddply(data, groupnames, .fun=summary_func,
                   varname)
+  data_sum <- rename(data_sum, c("mean" = varname))
   return(data_sum)
 }
