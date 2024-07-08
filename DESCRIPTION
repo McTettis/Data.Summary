@@ -7,4 +7,4 @@ Maintainer: Omedes, S. <omedes@icm.csic.es>
 Description: data.summary genera una taula resum per poder visualitzar rapidament les dades. export.summary genera un arxiu .csv que facilita la creacio de taules per a publicacions cientifiques
 Encoding: UTF-8
 LazyData: true
-Depends: dplyr
+Depends: plyr
