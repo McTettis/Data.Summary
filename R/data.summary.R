@@ -10,7 +10,7 @@
 #' @export
 
 data.summary <- function(data, varname, groupnames = NULL){
-  require(plyr)
+  require(dplyr)
   summary_func <- function(x, col){
     c(n = sum(!is.na(x[[col]]) & is.numeric(x[[col]])),
       mean = mean(x[[col]], na.rm = TRUE),
